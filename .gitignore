@@ -148,3 +148,7 @@ __MACOSX/
 .ipynb_checkpoints/
 *.ipynb_meta.json
 
+
+# Never commit local SSH keys
+.ssh/
+
