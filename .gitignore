@@ -1,0 +1,150 @@
+# ==========================================================
+# AgriSense IoT Monitor - .gitignore
+# ==========================================================
+
+# --- OS & Editor ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+*.log.*
+*.seed
+*.pid
+*.old
+*.orig
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.env
+.venv
+env/
+venv/
+Pipfile
+Pipfile.lock
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+instance/
+*.sqlite3
+*.db
+__init__.py
+
+# --- Node.js / React Frontend ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+dist/
+build/
+.cache/
+.next/
+out/
+coverage/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# --- Docker ---
+# Docker build caches and local metadata
+**/.docker/
+.dockerignore
+docker-compose.override.yml
+docker-compose.local.yml
+docker-compose.dev.yml
+
+# --- Logs and temp data ---
+logs/
+*.log
+*.out
+*.err
+*.gz
+tmp/
+temp/
+*.pid
+*.seed
+nohup.out
+
+# --- OS-Level & Backup Files ---
+*.bak
+*.tmp
+*~
+*.swp
+*.swo
+*.old
+*.orig
+*.rej
+
+# --- IDE / Tooling ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.vscode-test/
+.history/
+.project
+.pydevproject
+.settings/
+*.iml
+*.code-workspace
+
+# --- Build Outputs ---
+build/
+dist/
+artifacts/
+release/
+coverage.xml
+junit.xml
+reports/
+
+# --- Environment & Credentials ---
+.env
+.env.*
+.envrc
+secrets/
+*.pem
+*.key
+*.crt
+*.csr
+*.p12
+*.jks
+*.keystore
+
+# --- Data & Volumes ---
+data/
+volumes/
+*.tar
+*.zip
+*.tgz
+*.gz
+
+# --- Runbook Logs & Scripts ---
+*.log
+*.sh~
+*.backup
+*.bak
+*.tmp
+get-docker.sh
+agrisense-bootstrap.log
+
+# --- Local Files Not for Repo ---
+script/phase_0/get-docker.sh
+script/phase_0/*.log
+docs/*.log
+__MACOSX/
+
+# --- Jupyter / Notebooks ---
+.ipynb_checkpoints/
+*.ipynb_meta.json
+
