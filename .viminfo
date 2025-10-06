@@ -12,7 +12,7 @@
 ~h
 # Command Line History (newest to oldest):
 :wq
-|2,0,1759786989,,"wq"
+|2,0,1759793558,,"wq"
 
 # Search String History (newest to oldest):
 
@@ -25,222 +25,285 @@
 # Registers:
 
 # File marks:
-'0  679  0  ~/README.md
-|4,48,679,0,1759786989,"~/README.md"
-'1  102  0  ~/.dockerignore
-|4,49,102,0,1759785651,"~/.dockerignore"
-'2  150  0  ~/.gitignore
-|4,50,150,0,1759785622,"~/.gitignore"
-'3  102  0  ~/docs/runbook-phase0.md
-|4,51,102,0,1759701720,"~/docs/runbook-phase0.md"
-'4  79  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,52,79,0,1759701057,"~/script/phase_0/bootstrap-agrisense.sh"
-'5  141  0  ~/script/bootstrap-agrisense.sh
-|4,53,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
+'0  1  39  ~/docs/runbooks-phase1.md
+|4,48,1,39,1759793558,"~/docs/runbooks-phase1.md"
+'1  25  47  ~/docker-compose.yml
+|4,49,25,47,1759791864,"~/docker-compose.yml"
+'2  11  33  ~/prometheus/prometheus.yml
+|4,50,11,33,1759791723,"~/prometheus/prometheus.yml"
+'3  10  0  ~/grafana/provisioning/datasources/datasource.yml
+|4,51,10,0,1759791071,"~/grafana/provisioning/datasources/datasource.yml"
+'4  6  0  ~/mosquitto/mosquitto.conf
+|4,52,6,0,1759791015,"~/mosquitto/mosquitto.conf"
+'5  13  0  ~/alertmanager/alertmanager.yml
+|4,53,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+'6  17  0  ~/prometheus/prometheus.yml
+|4,54,17,0,1759790898,"~/prometheus/prometheus.yml"
+'7  17  0  ~/prometheus/prometheus.yml
+|4,55,17,0,1759790898,"~/prometheus/prometheus.yml"
+'8  62  0  ~/docker-compose.yml
+|4,56,62,0,1759790800,"~/docker-compose.yml"
+'9  62  0  ~/docker-compose.yml
+|4,57,62,0,1759790800,"~/docker-compose.yml"
 
 # Jumplist (newest first):
--'  679  0  ~/README.md
-|4,39,679,0,1759786989,"~/README.md"
--'  1  0  ~/README.md
-|4,39,1,0,1759786242,"~/README.md"
--'  102  0  ~/.dockerignore
-|4,39,102,0,1759785651,"~/.dockerignore"
--'  102  0  ~/.dockerignore
-|4,39,102,0,1759785651,"~/.dockerignore"
--'  1  0  ~/.dockerignore
-|4,39,1,0,1759785640,"~/.dockerignore"
--'  1  0  ~/.dockerignore
-|4,39,1,0,1759785640,"~/.dockerignore"
--'  150  0  ~/.gitignore
-|4,39,150,0,1759785622,"~/.gitignore"
--'  150  0  ~/.gitignore
-|4,39,150,0,1759785622,"~/.gitignore"
--'  150  0  ~/.gitignore
-|4,39,150,0,1759785622,"~/.gitignore"
--'  150  0  ~/.gitignore
-|4,39,150,0,1759785622,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1759785611,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1759785611,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1759785611,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1759785611,"~/.gitignore"
--'  102  0  ~/docs/runbook-phase0.md
-|4,39,102,0,1759701720,"~/docs/runbook-phase0.md"
--'  102  0  ~/docs/runbook-phase0.md
-|4,39,102,0,1759701720,"~/docs/runbook-phase0.md"
--'  102  0  ~/docs/runbook-phase0.md
-|4,39,102,0,1759701720,"~/docs/runbook-phase0.md"
--'  102  0  ~/docs/runbook-phase0.md
-|4,39,102,0,1759701720,"~/docs/runbook-phase0.md"
--'  102  0  ~/docs/runbook-phase0.md
-|4,39,102,0,1759701720,"~/docs/runbook-phase0.md"
--'  102  0  ~/docs/runbook-phase0.md
-|4,39,102,0,1759701720,"~/docs/runbook-phase0.md"
--'  102  0  ~/docs/runbook-phase0.md
-|4,39,102,0,1759701720,"~/docs/runbook-phase0.md"
--'  102  0  ~/docs/runbook-phase0.md
-|4,39,102,0,1759701720,"~/docs/runbook-phase0.md"
--'  1  0  ~/docs/runbook-phase0.md
-|4,39,1,0,1759701707,"~/docs/runbook-phase0.md"
--'  1  0  ~/docs/runbook-phase0.md
-|4,39,1,0,1759701707,"~/docs/runbook-phase0.md"
--'  1  0  ~/docs/runbook-phase0.md
-|4,39,1,0,1759701707,"~/docs/runbook-phase0.md"
--'  1  0  ~/docs/runbook-phase0.md
-|4,39,1,0,1759701707,"~/docs/runbook-phase0.md"
--'  1  0  ~/docs/runbook-phase0.md
-|4,39,1,0,1759701707,"~/docs/runbook-phase0.md"
--'  1  0  ~/docs/runbook-phase0.md
-|4,39,1,0,1759701707,"~/docs/runbook-phase0.md"
--'  1  0  ~/docs/runbook-phase0.md
-|4,39,1,0,1759701707,"~/docs/runbook-phase0.md"
--'  1  0  ~/docs/runbook-phase0.md
-|4,39,1,0,1759701707,"~/docs/runbook-phase0.md"
--'  79  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,79,0,1759701057,"~/script/phase_0/bootstrap-agrisense.sh"
--'  79  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,79,0,1759701057,"~/script/phase_0/bootstrap-agrisense.sh"
--'  79  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,79,0,1759701057,"~/script/phase_0/bootstrap-agrisense.sh"
--'  79  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,79,0,1759701057,"~/script/phase_0/bootstrap-agrisense.sh"
--'  79  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,79,0,1759701057,"~/script/phase_0/bootstrap-agrisense.sh"
--'  79  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,79,0,1759701057,"~/script/phase_0/bootstrap-agrisense.sh"
--'  79  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,79,0,1759701057,"~/script/phase_0/bootstrap-agrisense.sh"
--'  79  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,79,0,1759701057,"~/script/phase_0/bootstrap-agrisense.sh"
--'  79  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,79,0,1759701057,"~/script/phase_0/bootstrap-agrisense.sh"
--'  79  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,79,0,1759701057,"~/script/phase_0/bootstrap-agrisense.sh"
--'  79  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,79,0,1759701057,"~/script/phase_0/bootstrap-agrisense.sh"
--'  79  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,79,0,1759701057,"~/script/phase_0/bootstrap-agrisense.sh"
--'  79  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,79,0,1759701057,"~/script/phase_0/bootstrap-agrisense.sh"
--'  79  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,79,0,1759701057,"~/script/phase_0/bootstrap-agrisense.sh"
--'  79  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,79,0,1759701057,"~/script/phase_0/bootstrap-agrisense.sh"
--'  79  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,79,0,1759701057,"~/script/phase_0/bootstrap-agrisense.sh"
--'  1  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,1,0,1759700944,"~/script/phase_0/bootstrap-agrisense.sh"
--'  1  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,1,0,1759700944,"~/script/phase_0/bootstrap-agrisense.sh"
--'  1  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,1,0,1759700944,"~/script/phase_0/bootstrap-agrisense.sh"
--'  1  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,1,0,1759700944,"~/script/phase_0/bootstrap-agrisense.sh"
--'  1  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,1,0,1759700944,"~/script/phase_0/bootstrap-agrisense.sh"
--'  1  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,1,0,1759700944,"~/script/phase_0/bootstrap-agrisense.sh"
--'  1  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,1,0,1759700944,"~/script/phase_0/bootstrap-agrisense.sh"
--'  1  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,1,0,1759700944,"~/script/phase_0/bootstrap-agrisense.sh"
--'  1  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,1,0,1759700944,"~/script/phase_0/bootstrap-agrisense.sh"
--'  1  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,1,0,1759700944,"~/script/phase_0/bootstrap-agrisense.sh"
--'  1  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,1,0,1759700944,"~/script/phase_0/bootstrap-agrisense.sh"
--'  1  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,1,0,1759700944,"~/script/phase_0/bootstrap-agrisense.sh"
--'  1  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,1,0,1759700944,"~/script/phase_0/bootstrap-agrisense.sh"
--'  1  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,1,0,1759700944,"~/script/phase_0/bootstrap-agrisense.sh"
--'  1  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,1,0,1759700944,"~/script/phase_0/bootstrap-agrisense.sh"
--'  1  0  ~/script/phase_0/bootstrap-agrisense.sh
-|4,39,1,0,1759700944,"~/script/phase_0/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  141  0  ~/script/bootstrap-agrisense.sh
-|4,39,141,0,1759700598,"~/script/bootstrap-agrisense.sh"
--'  1  0  ~/script/bootstrap-agrisense.sh
-|4,39,1,0,1759700587,"~/script/bootstrap-agrisense.sh"
--'  1  0  ~/script/bootstrap-agrisense.sh
-|4,39,1,0,1759700587,"~/script/bootstrap-agrisense.sh"
--'  1  0  ~/script/bootstrap-agrisense.sh
-|4,39,1,0,1759700587,"~/script/bootstrap-agrisense.sh"
--'  1  0  ~/script/bootstrap-agrisense.sh
-|4,39,1,0,1759700587,"~/script/bootstrap-agrisense.sh"
--'  1  0  ~/script/bootstrap-agrisense.sh
-|4,39,1,0,1759700587,"~/script/bootstrap-agrisense.sh"
--'  1  0  ~/script/bootstrap-agrisense.sh
-|4,39,1,0,1759700587,"~/script/bootstrap-agrisense.sh"
+-'  1  39  ~/docs/runbooks-phase1.md
+|4,39,1,39,1759793558,"~/docs/runbooks-phase1.md"
+-'  25  47  ~/docker-compose.yml
+|4,39,25,47,1759791864,"~/docker-compose.yml"
+-'  25  47  ~/docker-compose.yml
+|4,39,25,47,1759791864,"~/docker-compose.yml"
+-'  62  0  ~/docker-compose.yml
+|4,39,62,0,1759791743,"~/docker-compose.yml"
+-'  62  0  ~/docker-compose.yml
+|4,39,62,0,1759791743,"~/docker-compose.yml"
+-'  11  33  ~/prometheus/prometheus.yml
+|4,39,11,33,1759791723,"~/prometheus/prometheus.yml"
+-'  11  33  ~/prometheus/prometheus.yml
+|4,39,11,33,1759791723,"~/prometheus/prometheus.yml"
+-'  11  33  ~/prometheus/prometheus.yml
+|4,39,11,33,1759791723,"~/prometheus/prometheus.yml"
+-'  11  33  ~/prometheus/prometheus.yml
+|4,39,11,33,1759791723,"~/prometheus/prometheus.yml"
+-'  17  0  ~/prometheus/prometheus.yml
+|4,39,17,0,1759791674,"~/prometheus/prometheus.yml"
+-'  17  0  ~/prometheus/prometheus.yml
+|4,39,17,0,1759791674,"~/prometheus/prometheus.yml"
+-'  17  0  ~/prometheus/prometheus.yml
+|4,39,17,0,1759791674,"~/prometheus/prometheus.yml"
+-'  17  0  ~/prometheus/prometheus.yml
+|4,39,17,0,1759791674,"~/prometheus/prometheus.yml"
+-'  10  0  ~/grafana/provisioning/datasources/datasource.yml
+|4,39,10,0,1759791071,"~/grafana/provisioning/datasources/datasource.yml"
+-'  10  0  ~/grafana/provisioning/datasources/datasource.yml
+|4,39,10,0,1759791071,"~/grafana/provisioning/datasources/datasource.yml"
+-'  10  0  ~/grafana/provisioning/datasources/datasource.yml
+|4,39,10,0,1759791071,"~/grafana/provisioning/datasources/datasource.yml"
+-'  10  0  ~/grafana/provisioning/datasources/datasource.yml
+|4,39,10,0,1759791071,"~/grafana/provisioning/datasources/datasource.yml"
+-'  10  0  ~/grafana/provisioning/datasources/datasource.yml
+|4,39,10,0,1759791071,"~/grafana/provisioning/datasources/datasource.yml"
+-'  10  0  ~/grafana/provisioning/datasources/datasource.yml
+|4,39,10,0,1759791071,"~/grafana/provisioning/datasources/datasource.yml"
+-'  10  0  ~/grafana/provisioning/datasources/datasource.yml
+|4,39,10,0,1759791071,"~/grafana/provisioning/datasources/datasource.yml"
+-'  10  0  ~/grafana/provisioning/datasources/datasource.yml
+|4,39,10,0,1759791071,"~/grafana/provisioning/datasources/datasource.yml"
+-'  1  0  ~/grafana/provisioning/datasources/datasource.yml
+|4,39,1,0,1759791052,"~/grafana/provisioning/datasources/datasource.yml"
+-'  1  0  ~/grafana/provisioning/datasources/datasource.yml
+|4,39,1,0,1759791052,"~/grafana/provisioning/datasources/datasource.yml"
+-'  1  0  ~/grafana/provisioning/datasources/datasource.yml
+|4,39,1,0,1759791052,"~/grafana/provisioning/datasources/datasource.yml"
+-'  1  0  ~/grafana/provisioning/datasources/datasource.yml
+|4,39,1,0,1759791052,"~/grafana/provisioning/datasources/datasource.yml"
+-'  1  0  ~/grafana/provisioning/datasources/datasource.yml
+|4,39,1,0,1759791052,"~/grafana/provisioning/datasources/datasource.yml"
+-'  1  0  ~/grafana/provisioning/datasources/datasource.yml
+|4,39,1,0,1759791052,"~/grafana/provisioning/datasources/datasource.yml"
+-'  1  0  ~/grafana/provisioning/datasources/datasource.yml
+|4,39,1,0,1759791052,"~/grafana/provisioning/datasources/datasource.yml"
+-'  1  0  ~/grafana/provisioning/datasources/datasource.yml
+|4,39,1,0,1759791052,"~/grafana/provisioning/datasources/datasource.yml"
+-'  6  0  ~/mosquitto/mosquitto.conf
+|4,39,6,0,1759791015,"~/mosquitto/mosquitto.conf"
+-'  6  0  ~/mosquitto/mosquitto.conf
+|4,39,6,0,1759791015,"~/mosquitto/mosquitto.conf"
+-'  6  0  ~/mosquitto/mosquitto.conf
+|4,39,6,0,1759791015,"~/mosquitto/mosquitto.conf"
+-'  6  0  ~/mosquitto/mosquitto.conf
+|4,39,6,0,1759791015,"~/mosquitto/mosquitto.conf"
+-'  6  0  ~/mosquitto/mosquitto.conf
+|4,39,6,0,1759791015,"~/mosquitto/mosquitto.conf"
+-'  6  0  ~/mosquitto/mosquitto.conf
+|4,39,6,0,1759791015,"~/mosquitto/mosquitto.conf"
+-'  6  0  ~/mosquitto/mosquitto.conf
+|4,39,6,0,1759791015,"~/mosquitto/mosquitto.conf"
+-'  6  0  ~/mosquitto/mosquitto.conf
+|4,39,6,0,1759791015,"~/mosquitto/mosquitto.conf"
+-'  6  0  ~/mosquitto/mosquitto.conf
+|4,39,6,0,1759791015,"~/mosquitto/mosquitto.conf"
+-'  6  0  ~/mosquitto/mosquitto.conf
+|4,39,6,0,1759791015,"~/mosquitto/mosquitto.conf"
+-'  6  0  ~/mosquitto/mosquitto.conf
+|4,39,6,0,1759791015,"~/mosquitto/mosquitto.conf"
+-'  6  0  ~/mosquitto/mosquitto.conf
+|4,39,6,0,1759791015,"~/mosquitto/mosquitto.conf"
+-'  6  0  ~/mosquitto/mosquitto.conf
+|4,39,6,0,1759791015,"~/mosquitto/mosquitto.conf"
+-'  6  0  ~/mosquitto/mosquitto.conf
+|4,39,6,0,1759791015,"~/mosquitto/mosquitto.conf"
+-'  6  0  ~/mosquitto/mosquitto.conf
+|4,39,6,0,1759791015,"~/mosquitto/mosquitto.conf"
+-'  6  0  ~/mosquitto/mosquitto.conf
+|4,39,6,0,1759791015,"~/mosquitto/mosquitto.conf"
+-'  1  0  ~/mosquitto/mosquitto.conf
+|4,39,1,0,1759790999,"~/mosquitto/mosquitto.conf"
+-'  1  0  ~/mosquitto/mosquitto.conf
+|4,39,1,0,1759790999,"~/mosquitto/mosquitto.conf"
+-'  1  0  ~/mosquitto/mosquitto.conf
+|4,39,1,0,1759790999,"~/mosquitto/mosquitto.conf"
+-'  1  0  ~/mosquitto/mosquitto.conf
+|4,39,1,0,1759790999,"~/mosquitto/mosquitto.conf"
+-'  1  0  ~/mosquitto/mosquitto.conf
+|4,39,1,0,1759790999,"~/mosquitto/mosquitto.conf"
+-'  1  0  ~/mosquitto/mosquitto.conf
+|4,39,1,0,1759790999,"~/mosquitto/mosquitto.conf"
+-'  1  0  ~/mosquitto/mosquitto.conf
+|4,39,1,0,1759790999,"~/mosquitto/mosquitto.conf"
+-'  1  0  ~/mosquitto/mosquitto.conf
+|4,39,1,0,1759790999,"~/mosquitto/mosquitto.conf"
+-'  1  0  ~/mosquitto/mosquitto.conf
+|4,39,1,0,1759790999,"~/mosquitto/mosquitto.conf"
+-'  1  0  ~/mosquitto/mosquitto.conf
+|4,39,1,0,1759790999,"~/mosquitto/mosquitto.conf"
+-'  1  0  ~/mosquitto/mosquitto.conf
+|4,39,1,0,1759790999,"~/mosquitto/mosquitto.conf"
+-'  1  0  ~/mosquitto/mosquitto.conf
+|4,39,1,0,1759790999,"~/mosquitto/mosquitto.conf"
+-'  1  0  ~/mosquitto/mosquitto.conf
+|4,39,1,0,1759790999,"~/mosquitto/mosquitto.conf"
+-'  1  0  ~/mosquitto/mosquitto.conf
+|4,39,1,0,1759790999,"~/mosquitto/mosquitto.conf"
+-'  1  0  ~/mosquitto/mosquitto.conf
+|4,39,1,0,1759790999,"~/mosquitto/mosquitto.conf"
+-'  1  0  ~/mosquitto/mosquitto.conf
+|4,39,1,0,1759790999,"~/mosquitto/mosquitto.conf"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  13  0  ~/alertmanager/alertmanager.yml
+|4,39,13,0,1759790972,"~/alertmanager/alertmanager.yml"
+-'  1  0  ~/alertmanager/alertmanager.yml
+|4,39,1,0,1759790957,"~/alertmanager/alertmanager.yml"
+-'  1  0  ~/alertmanager/alertmanager.yml
+|4,39,1,0,1759790957,"~/alertmanager/alertmanager.yml"
+-'  1  0  ~/alertmanager/alertmanager.yml
+|4,39,1,0,1759790957,"~/alertmanager/alertmanager.yml"
+-'  1  0  ~/alertmanager/alertmanager.yml
+|4,39,1,0,1759790957,"~/alertmanager/alertmanager.yml"
+-'  1  0  ~/alertmanager/alertmanager.yml
+|4,39,1,0,1759790957,"~/alertmanager/alertmanager.yml"
+-'  1  0  ~/alertmanager/alertmanager.yml
+|4,39,1,0,1759790957,"~/alertmanager/alertmanager.yml"
+-'  1  0  ~/alertmanager/alertmanager.yml
+|4,39,1,0,1759790957,"~/alertmanager/alertmanager.yml"
 
 # History of marks within files (newest to oldest):
+
+> ~/docs/runbooks-phase1.md
+	*	1759793555	0
+	"	1	39
+	^	1	40
+	.	54	37
+	+	290	81
+	+	218	28
+	+	54	37
+
+> ~/docker-compose.yml
+	*	1759791861	0
+	"	25	47
+	^	25	48
+	.	10	48
+	+	61	15
+	+	1	0
+	+	2	0
+	+	10	48
+
+> ~/prometheus/prometheus.yml
+	*	1759791720	0
+	"	11	33
+	^	11	34
+	.	11	33
+	+	16	36
+	+	11	33
+
+> ~/grafana/provisioning/datasources/datasource.yml
+	*	1759791066	0
+	"	10	0
+	^	10	0
+	.	9	18
+	+	9	18
+
+> ~/mosquitto/mosquitto.conf
+	*	1759791013	0
+	"	6	0
+	^	6	0
+	.	5	15
+	+	5	15
+
+> ~/alertmanager/alertmanager.yml
+	*	1759790970	0
+	"	13	0
+	^	13	0
+	.	12	25
+	+	12	25
+
+> ~/docs/runbook-git-keys.md
+	*	1759789975	0
+	"	198	0
+	^	198	0
+	.	198	0
+	+	198	0
 
 > ~/README.md
 	*	1759786985	0
