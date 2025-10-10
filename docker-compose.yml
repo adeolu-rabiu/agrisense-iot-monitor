@@ -33,16 +33,11 @@ services:
   alertmanager:
     image: prom/alertmanager:latest
     container_name: alertmanager
-    env_file:
-      - ./.env
-    environment:
-      - SLACK_WEBHOOK_URL=${SLACK_WEBHOOK_URL}
-    entrypoint: ["/entrypoint.sh"]
     command:
-      - --config.file=/etc/alertmanager/alertmanager.yml
+      ["--config.file=/etc/alertmanager/alertmanager.yml"]
     volumes:
-      - ./alertmanager/alertmanager.yml.template:/etc/alertmanager/alertmanager.yml.template:ro
-      - ./alertmanager/entrypoint.sh:/entrypoint.sh:ro
+      - ./alertmanager/alertmanager.yml:/etc/alertmanager/alertmanager.yml:ro
+      - ./alertmanager/secrets/slack_webhook:/etc/alertmanager/secrets/slack_webhook:ro
     ports:
       - "9093:9093"
     networks:
