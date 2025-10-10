@@ -7,13 +7,48 @@ groups:
           severity: info
         annotations:
           summary: "Watchdog"
-          description: "Always-firing alert to verify Prometheus→Alertmanager wiring."
+          description: "Always-firing alert to verify Prometheus → Alertmanager."
 
-      - alert: PrometheusTargetMissing
-        expr: up == 0
-        for: 1m
+  - name: agrisense_device_alerts
+    interval: 30s
+    rules:
+      - alert: LowSignalStrength
+        expr: signal_strength_dbm < -90
+        for: 5m
         labels:
           severity: warning
+          component: connectivity
         annotations:
-          summary: "Target missing"
-          description: "Instance {{ $labels.instance }} is down."
+          summary: "Low signal strength detected"
+          description: "Device {{ $labels.silo_id }} signal {{ $value }} dBm"
+
+      - alert: CriticalBattery
+        expr: battery_level_percent < 20
+        for: 10m
+        labels:
+          severity: critical
+          component: power
+        annotations:
+          summary: "Critical battery level"
+          description: "Device {{ $labels.silo_id }} battery at {{ $value }}%"
+
+      - alert: SensorDropout
+        expr: rate(sensor_dropout_total[5m]) > 0.1
+        for: 2m
+        labels:
+          severity: critical
+          component: sensor
+        annotations:
+          summary: "Sensor dropout detected"
+          description: "Silo {{ $labels.silo_id }} experiencing sensor failures"
+
+      - alert: HighWeightCapacity
+        expr: (device_weight_kg / 18000) > 0.95
+        for: 1h
+        labels:
+          severity: warning
+          component: capacity
+        annotations:
+          summary: "Silo nearly full"
+          description: "Silo {{ $labels.silo_id }} at {{ $value | humanizePercentage }} capacity"
+

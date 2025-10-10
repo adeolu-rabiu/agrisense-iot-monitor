@@ -8,10 +8,17 @@ alerting:
         - targets: ['alertmanager:9093']
 
 rule_files:
-  - "/etc/prometheus/alert_rules/*.yml"
+  - /etc/prometheus/rules/*.yml
 
 scrape_configs:
+  # Self-scrape
   - job_name: 'prometheus'
     static_configs:
       - targets: ['prometheus:9090']
+
+  # Simulator metrics
+  - job_name: 'agrisense-simulator'
+    scrape_interval: 10s
+    static_configs:
+      - targets: ['device-simulator:8081']
 

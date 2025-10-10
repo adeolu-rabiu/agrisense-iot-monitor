@@ -1,0 +1,97 @@
+import os
+import time
+import json
+import random
+import paho.mqtt.client as mqtt
+from prometheus_client import start_http_server, Gauge, Counter
+sensor_dropout_total = Counter("sensor_dropout_total", "Count of sensor dropouts", ["silo_id"])
+
+
+if random.random() < 0.05:  # 5% chance of dropout
+    sensor_dropout_total.labels(silo_id=silo_id).inc()
+
+# --- Environment ---
+SILO_COUNT = int(os.getenv("SIMULATOR_SILO_COUNT", "5"))
+MQTT_HOST = os.getenv("SIMULATOR_MQTT_HOST", "mqtt-broker")
+MQTT_PORT = int(os.getenv("SIMULATOR_MQTT_PORT", "1883"))
+SCRAPE_PORT = int(os.getenv("SIMULATOR_SCRAPE_PORT", "8081"))
+
+FORCE_LOW_BATTERY = os.getenv("SIMULATOR_FORCE_LOW_BATTERY", "false").lower() == "true"
+FORCE_LOW_SIGNAL = os.getenv("SIMULATOR_FORCE_LOW_SIGNAL", "false").lower() == "true"
+FORCE_DROPOUT    = os.getenv("SIMULATOR_FORCE_DROPOUT", "false").lower() == "true"
+
+# --- Prometheus metrics ---
+device_weight = Gauge('device_weight_kg', 'Current silo weight in kg', ['silo_id'])
+signal_strength = Gauge('signal_strength_dbm', 'Signal strength (dBm)', ['silo_id'])
+battery_level = Gauge('battery_level_percent', 'Battery level (%)', ['silo_id'])
+sensor_dropout = Counter('sensor_dropout_total', 'Sensor dropouts', ['silo_id'])
+
+class SiloSimulator:
+    def __init__(self, silo_id, mqtt_host=MQTT_HOST, mqtt_port=MQTT_PORT):
+        self.silo_id = f"Silo_{silo_id}"
+        self.weight = random.randint(8000, 16000)  # 8–16t
+        self.signal = random.randint(-85, -65)     # dBm
+        self.battery = random.randint(40, 100)     # %
+        self.client = mqtt.Client(client_id=self.silo_id)
+        try:
+            self.client.connect(mqtt_host, mqtt_port, 60)
+            self.client.loop_start()
+            print(f"[OK] Connected {self.silo_id} to MQTT {mqtt_host}:{mqtt_port}")
+        except Exception as e:
+            print(f"[ERR] MQTT connect failed for {self.silo_id}: {e}")
+
+    def update_metrics(self):
+        # Force states for alert testing
+        if FORCE_LOW_BATTERY:
+            self.battery = 15
+        else:
+            if random.random() < 0.05:
+                self.battery = max(0, self.battery - 1)
+
+        if FORCE_LOW_SIGNAL:
+            self.signal = -95
+        else:
+            self.signal += random.randint(-5, 5)
+            self.signal = max(-100, min(-60, self.signal))
+
+        if FORCE_DROPOUT and random.random() < 0.5:
+            sensor_dropout.labels(silo_id=self.silo_id).inc()
+            return None  # simulate a dropout (skip publish this tick)
+
+        # Weight: simulate consumption
+        self.weight += random.randint(-100, 20)
+        self.weight = max(1000, min(18000, self.weight))
+
+        return True
+
+    def publish(self):
+        if self.update_metrics():
+            # Update metrics
+            device_weight.labels(silo_id=self.silo_id).set(self.weight)
+            signal_strength.labels(silo_id=self.silo_id).set(self.signal)
+            battery_level.labels(silo_id=self.silo_id).set(self.battery)
+
+            # Publish MQTT telemetry
+            payload = {
+                "silo_id": self.silo_id,
+                "weight_kg": self.weight,
+                "signal_dbm": self.signal,
+                "battery_percent": self.battery,
+                "timestamp": int(time.time())
+            }
+            topic = f"agrisense/{self.silo_id}/telemetry"
+            self.client.publish(topic, json.dumps(payload))
+            print(f"{self.silo_id}: {self.weight}kg | {self.signal}dBm | {self.battery}% -> {topic}")
+
+def main():
+    print("Starting AgriSense Device Simulator...")
+    start_http_server(SCRAPE_PORT)
+    silos = [SiloSimulator(i) for i in range(1, SILO_COUNT + 1)]
+    while True:
+        for s in silos:
+            s.publish()
+        time.sleep(15)
+
+if __name__ == "__main__":
+    main()
+

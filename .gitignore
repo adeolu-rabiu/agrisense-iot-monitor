@@ -152,3 +152,11 @@ __MACOSX/
 # Never commit local SSH keys
 .ssh/
 
+# Exclude all Scripts and docs
+#script/*
+#docs/*
+#*alertmanager.yml*
+.bash_history
+.bash_history
+.env
+.env.agrisense

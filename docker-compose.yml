@@ -33,10 +33,16 @@ services:
   alertmanager:
     image: prom/alertmanager:latest
     container_name: alertmanager
+    env_file:
+      - ./.env
+    environment:
+      - SLACK_WEBHOOK_URL=${SLACK_WEBHOOK_URL}
+    entrypoint: ["/entrypoint.sh"]
     command:
       - --config.file=/etc/alertmanager/alertmanager.yml
     volumes:
-      - ./alertmanager/alertmanager.yml:/etc/alertmanager/alertmanager.yml:ro
+      - ./alertmanager/alertmanager.yml.template:/etc/alertmanager/alertmanager.yml.template:ro
+      - ./alertmanager/entrypoint.sh:/entrypoint.sh:ro
     ports:
       - "9093:9093"
     networks:
@@ -50,6 +56,38 @@ services:
     ports:
       - "1883:1883"
       - "9001:9001"
+    networks:
+      - agrisense-net
+
+  device-simulator:
+    build: ./device-simulator
+    container_name: device-simulator
+    # Keep reading .env if you want to override values without editing compose
+    env_file:
+      - ./.env
+    environment:
+      # sane defaults (overridden by .env if present)
+      SIMULATOR_SCRAPE_PORT: "${SIMULATOR_SCRAPE_PORT:-8081}"
+      SIMULATOR_SILO_COUNT:  "${SIMULATOR_SILO_COUNT:-5}"
+      SIMULATOR_MQTT_HOST:   "${SIMULATOR_MQTT_HOST:-mqtt-broker}"
+      SIMULATOR_MQTT_PORT:   "${SIMULATOR_MQTT_PORT:-1883}"
+      # test-mode flags; leave false for normal ops
+      SIMULATOR_FORCE_LOW_BATTERY: "${SIMULATOR_FORCE_LOW_BATTERY:-false}"
+      SIMULATOR_FORCE_LOW_SIGNAL:  "${SIMULATOR_FORCE_LOW_SIGNAL:-false}"
+      SIMULATOR_FORCE_DROPOUT:     "${SIMULATOR_FORCE_DROPOUT:-false}"
+    ports:
+      # host:container — container is always 8081; host can vary via .env
+      - "${SIMULATOR_SCRAPE_PORT:-8081}:8081"
+    depends_on:
+      - mqtt-broker
+      - prometheus
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://127.0.0.1:8081/metrics').read(); print('ok')\""]
+      interval: 20s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
     networks:
       - agrisense-net
 
