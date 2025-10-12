@@ -1,0 +1,22 @@
+groups:
+  - name: agrisense_recording
+    interval: 30s
+    rules:
+      # Per-silo “friendly” series
+      - record: agrisense:battery_percent:by_silo
+        expr: battery_level_percent
+      - record: agrisense:signal_dbm:by_silo
+        expr: signal_strength_dbm
+      - record: agrisense:weight_kg:by_silo
+        expr: device_weight_kg
+      - record: agrisense:sensor_dropout_rate:5m
+        expr: rate(sensor_dropout_total[5m])
+
+      # Fleet KPIs
+      - record: agrisense:fleet_battery_min
+        expr: min(battery_level_percent)
+      - record: agrisense:fleet_signal_p95
+        expr: quantile(0.95, signal_strength_dbm)
+      - record: agrisense:fleet_weight_sum
+        expr: sum(device_weight_kg)
+
